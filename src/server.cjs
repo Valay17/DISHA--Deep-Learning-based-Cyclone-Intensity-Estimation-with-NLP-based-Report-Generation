@@ -3,12 +3,6 @@
 const twilio = require("twilio");
 
 // Twilio credentials
-//const accountSid = "AC8b0d1320308afda02853df8043677912";
-//const authToken = "10a4fa56cec7882bb9c0b97548eab9dc";
-//const twilioPhone = "+13203993906";
-//const defaultRecipientPhone = "+919833829560"; // Default master number Anuj
-//const defaultRecipientPhone = "+918850129213"; // Default recipient phone number Vaibhav
-//const defaultRecipientPhone = "+917666394676"; // Default recipient phone number Valay
 
 const client = twilio(accountSid, authToken);
 
@@ -58,10 +52,7 @@ sendAlertSMS();
 const twilio = require("twilio");
 
 const app = express();
-const accountSid = "AC8b0d1320308afda02853df8043677912";
-const authToken = "10a4fa56cec7882bb9c0b97548eab9dc";
-const twilioPhone = "+13203993906";
-const defaultRecipientPhone = "+919833829560"; // Default recipient phone number
+//Twilio Creds
 const client = twilio(accountSid, authToken);
 
 app.use(express.static("dist")); // Serve static files from the 'dist' directory
