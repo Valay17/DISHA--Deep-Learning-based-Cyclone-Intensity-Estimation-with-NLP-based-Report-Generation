@@ -1,0 +1,23 @@
+/* Custom styles for the alert button */
+.alert-button-new {
+  background-color: #1cd522; /* Green background */
+  color: rgb(57, 107, 183); /* White text */
+  padding: 15px 25px; /* Padding */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  margin-top: 20px; /* Add some distance from the button above */
+  margin-right: 400px;
+}
+
+/* Hover effect */
+.alert-button-new:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Active effect */
+.alert-button-new:active {
+  background-color: #3e8e41; /* Slightly darker green when pressed */
+}

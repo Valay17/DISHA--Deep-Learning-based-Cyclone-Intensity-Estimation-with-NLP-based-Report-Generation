@@ -1,0 +1,14 @@
+.google-maps-button {
+  background-color: #d79fdc; /* Google Blue */
+  color: #000000; /* Black text */
+  border: none;
+  padding: 15px 17px; /* Adjust padding */
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.google-maps-button:hover {
+  background-color: #1e61cd; /* Darker shade of Google Blue on hover */
+}

@@ -1,0 +1,36 @@
+.upload-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.upload-button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #4b4f56;
+  border-radius: 8px;
+  background-color: #2e3137;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #1f2227;
+  border-color: #373b42;
+}
+
+.upload-text {
+  margin-top: 10px;
+  font-size: 25px;
+  color: #cbd0db;
+}
+
+.hidden-input {
+  display: none;
+}
