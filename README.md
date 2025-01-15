@@ -1,5 +1,6 @@
 <div id="user-content-toc" align="center">
   <ul>
+    <img src="https://github.com/user-attachments/assets/70c974a9-1d90-48f8-aa26-5696c349b449" align="center" width="120" height="120"> 
     <summary><h1> <p>DISHA - Deep Learning based Cyclone Intensity Estimation with NLP based Report Generation </p> </h1></summary>
   </ul>
 </div>
