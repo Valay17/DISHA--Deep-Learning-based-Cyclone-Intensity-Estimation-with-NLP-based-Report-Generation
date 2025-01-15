@@ -33,7 +33,7 @@ export const createHourlyCards = () => {
 export const createDailyCards = () => {
   const dailyForecastSection = document.querySelector(".daily-forecast-section");
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 40; i++) {
     const dailyWeatherForecastCard = document.createElement("div");
     dailyWeatherForecastCard.classList.add("daily-weather-forecast-card");
 

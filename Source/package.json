@@ -5,13 +5,13 @@
   "type": "module",
   "description": "Quickly access accurate weather information with a clean, modern and user-friendly design.",
   "scripts": {
-  "dev": "vite --port 3000",                
-  "scss": "sass src/scss/main.scss dist/assets/css/main.css --no-source-map --style=compressed", 
-  "build:scss": "npm run scss",
-  "build:assets": "vite build",
-  "build": "npm run build:scss && npm run build:assets", 
-  "preview": "vite preview"                
-},
+    "scss": "sass src/scss/main.scss src/scss/main.css --no-source-map",
+    "dev": "vite --port 3000", 
+    "build": "npm run scss && vite build",
+    "preview": "vite preview",
+    "start": "node server.cjs",
+    "dev-server": "nodemon server.cjs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pekkiriscim/weather.git"

@@ -5,6 +5,8 @@ import { defineConfig } from "vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { createHtmlPlugin } from "vite-plugin-html";
 import autoprefixer from "autoprefixer";
+import fs from "fs";
+import * as path from "path";
 
 export default defineConfig({
   
@@ -25,7 +27,21 @@ export default defineConfig({
         { src: "src/animated", dest: "src/animated" },
       ],
     }),
-  ],
+  {
+    name: "fix-html-paths", // Custom plugin
+    enforce: "post",
+    closeBundle() {
+      const indexPath = path.resolve(__dirname, "dist/index.html");
+      if (fs.existsSync(indexPath)) {
+        let html = fs.readFileSync(indexPath, "utf-8");
+        // Replace only /src with ./src, ignoring ./src paths
+        html = html.replace(/(?<!\.)\/src/g, "./src");
+        fs.writeFileSync(indexPath, html, "utf-8");
+        console.log("Replaced '/src' with './src' in index.html");
+      }
+    },
+  },
+],
   css: {
     postcss: {
       plugins: [autoprefixer()],
