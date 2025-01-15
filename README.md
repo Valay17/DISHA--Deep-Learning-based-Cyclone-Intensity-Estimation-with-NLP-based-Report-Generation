@@ -15,7 +15,7 @@ The DISHA project aims to enhance disaster preparedness and management in the In
 The Indian Ocean region is one of the most cyclone-prone areas in the world, often witnessing devastating storms that result in the loss of lives, displacement, and significant economic damage. Despite advancements in technology, many affected regions still lack access to timely, accurate, and actionable information that could mitigate such impacts. This project was conceived with a vision to fill these critical gaps by leveraging state-of-the-art machine learning, natural language processing (NLP), and web technologies.
 
 #### Problem Statement
-Cyclonic disasters pose a severe threat to communities in the Indian Ocean region. Current systems are either inaccessible to rural populations, fail to provide reliable real-time predictions, or lack multilingual support. Furthermore, existing alert systems often struggle to communicate effectively, leaving communities unprepared for the devastation caused by cyclones. These shortcomings highlight the urgent need for an integrated solution capable of providing accurate, real-time, and accessible cyclone management services.
+Develop a system to improve cyclone management and disaster preparedness in the Indian Ocean region by leveraging deep learning and NLP models. The solution should predict cyclone intensity, provide multilingual alerts, offer safety paths, and facilitate real-time communication with stakeholders. It should address the challenges of existing systems, including limited scalability, lack of regional language support, and inefficient communication during emergencies.
 
 #### Objectives
 This project seeks to address the limitations of existing cyclone alert and management systems by:
