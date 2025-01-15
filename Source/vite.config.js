@@ -7,7 +7,7 @@ import { createHtmlPlugin } from "vite-plugin-html";
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
-  base: "//DISHA--Deep-Learning-based-Cyclone-Intensity-Estimation-with-NLP-based-Report-Generation/", // Replace with your repository name
+  
   plugins: [
     // Inject HTML with custom script
     createHtmlPlugin({
@@ -20,9 +20,9 @@ export default defineConfig({
     // Copy static assets to the dist folder
     viteStaticCopy({
       targets: [
-        { src: "src/img", dest: "assets" },
-        { src: "src/static", dest: "assets/static" },
-        { src: "src/animated", dest: "assets/animated" },
+        { src: "src/img", dest: "src" },
+        { src: "src/static", dest: "src/static" },
+        { src: "src/animated", dest: "src/animated" },
       ],
     }),
   ],
@@ -35,9 +35,9 @@ export default defineConfig({
     rollupOptions: {
       input: "./index.html", // Ensure index.html is included
       output: {
-        assetFileNames: "assets/[ext]/[name]-[hash].[ext]",
-        entryFileNames: "assets/js/[name]-[hash].js",
-        chunkFileNames: "assets/js/[name]-[hash].js",
+        assetFileNames: "src/[ext]/[name]-[hash].[ext]",
+        entryFileNames: "src/js/[name]-[hash].js",
+        chunkFileNames: "src/js/[name]-[hash].js",
       },
     },
   },
