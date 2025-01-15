@@ -79,14 +79,6 @@ The combination of these methodologies ensures the project’s effectiveness in 
 - **Web Application**:  
   - Built with Node.js to offer a responsive interface compatible with both desktop and mobile devices.  
   - Features include dark/light mode, multilingual support, and toggle options for metric and imperial units.  
-
-
-### System Design Overview  
-The project is built on a multi-layered architecture integrating deep learning models, natural language processing, and API-driven services within a cohesive web application. The design emphasizes modularity, scalability, and user-centric functionality.
-
-- **Frontend**: A responsive web application with support for dark and light themes, multilingual capabilities, and dynamic rendering of cyclone-related information.  
-- **Backend**: A robust server managing AI models, APIs, and database interactions, ensuring real-time updates and processing.  
-- **Database**: A centralized repository for user-reported incidents, system logs, and cyclone-related data.
   
 #### Design Choices and Rationale
 - **Deep Learning Models**:  
@@ -140,9 +132,7 @@ The system includes a feature for users to report incidents during cyclonic even
 ### Overall Integration
 The project integrates the CNN and T5 models with the web application, APIs, and supporting systems to create a cohesive and scalable cyclone management tool. The seamless interaction between components ensures reliable performance, providing users with timely and actionable insights.
 
-## Results and Discussion
-
-### Results
+## Result
 1. **CNN Model Performance**:
    - Achieved an accuracy rate of **86%** in predicting cyclone intensities across diverse test scenarios.
    - Demonstrated reliability in cyclone intensity estimation, showcasing the potential for real-world applications.
@@ -154,21 +144,6 @@ The project integrates the CNN and T5 models with the web application, APIs, and
 3. **Web Application**:
    - Displayed robust functionality, reliability, and responsiveness across various devices and scenarios.
    - Integrated all components effectively, offering users a unified experience for cyclone management.
-
-### Discussion
-The combined results highlight the project's success in leveraging deep learning and NLP techniques, supported by a user-friendly web application. Key observations include:
-
-- **CNN Model**:
-  - The 86% accuracy achieved instills confidence in the model's utility for cyclone intensity prediction. 
-  - Future refinements, such as incorporating real-time weather data, could further enhance its predictive accuracy.
-
-- **T5 NLP Model**:
-  - The model's exceptional ability to generate cyclone precaution summaries and its high-quality multilingual translations make it a critical tool for effective communication in disaster scenarios.
-
-- **Web Application**:
-  - Its responsive design, real-time data integration, and intuitive interface enable timely information dissemination and decision-making, empowering users in cyclone-prone areas.
-
-Overall, the results demonstrate the system's potential to significantly contribute to cyclone management, providing accurate predictions, clear communication, and user-friendly tools for disaster preparedness.
 
 ## Conclusion and Future Work
 
