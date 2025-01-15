@@ -40,14 +40,7 @@ Current systems for cyclone prediction and management suffer from several issues
 
 By addressing these issues, this project aims to provide an accessible, accurate, and reliable solution that enhances disaster preparedness and mitigates the impacts of cyclonic events.
 
-## Details and Design of Project, Methodology
-
-### System Design Overview  
-The project is built on a multi-layered architecture integrating deep learning models, natural language processing, and API-driven services within a cohesive web application. The design emphasizes modularity, scalability, and user-centric functionality.
-
-- **Frontend**: A responsive web application with support for dark and light themes, multilingual capabilities, and dynamic rendering of cyclone-related information.  
-- **Backend**: A robust server managing AI models, APIs, and database interactions, ensuring real-time updates and processing.  
-- **Database**: A centralized repository for user-reported incidents, system logs, and cyclone-related data.  
+## Project Methodology and Design Overview
 
 ### Methodology  
 1. **Data Collection and Preprocessing**:  
@@ -70,16 +63,6 @@ The project is built on a multi-layered architecture integrating deep learning m
 
 The combination of these methodologies ensures the project’s effectiveness in providing accurate predictions, timely alerts, and user-friendly interfaces for managing cyclonic emergencies.
 
-## Project Methodology and Design Overview
-
-#### Methodology
-The project follows a systematic methodology aimed at delivering a robust and user-centric cyclone management system:  
-1. **Requirement Analysis**: Studied the shortcomings of existing systems to define clear objectives, including cyclone intensity prediction, multilingual alerts, and user-friendly interfaces.  
-2. **Model Development**: Developed a CNN model for cyclone intensity estimation and a T5 NLP model for generating multilingual precautionary summaries and translations.  
-3. **API Integration**: Incorporated external APIs for real-time weather data, navigation, elevation, and alert generation to enhance the application’s functionalities.  
-4. **Web Application Development**: Designed a responsive web application to present model outputs and additional features like incident reporting and safety paths.  
-5. **Testing and Evaluation**: Rigorous testing ensured the accuracy of models and the reliability of the web application across various scenarios.  
-
 #### Tech Stack
 - **Programming Languages**: Python for backend and model development; JavaScript for frontend web application.  
 - **Frameworks**: Node.js for the frontend UI.  
@@ -97,6 +80,14 @@ The project follows a systematic methodology aimed at delivering a robust and us
   - Built with Node.js to offer a responsive interface compatible with both desktop and mobile devices.  
   - Features include dark/light mode, multilingual support, and toggle options for metric and imperial units.  
 
+
+### System Design Overview  
+The project is built on a multi-layered architecture integrating deep learning models, natural language processing, and API-driven services within a cohesive web application. The design emphasizes modularity, scalability, and user-centric functionality.
+
+- **Frontend**: A responsive web application with support for dark and light themes, multilingual capabilities, and dynamic rendering of cyclone-related information.  
+- **Backend**: A robust server managing AI models, APIs, and database interactions, ensuring real-time updates and processing.  
+- **Database**: A centralized repository for user-reported incidents, system logs, and cyclone-related data.
+  
 #### Design Choices and Rationale
 - **Deep Learning Models**:  
   - CNN was selected for its strength in handling image data for cyclone intensity estimation.  
