@@ -25,6 +25,7 @@
     "autoprefixer": "^10.4.14",
     "sass": "^1.59.2",
     "vite": "^4.1.0",
+    "vite-plugin-html": "^3.2.2",
     "vite-plugin-static-copy": "^0.13.1"
   },
   "browserslist": [
