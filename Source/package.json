@@ -5,12 +5,13 @@
   "type": "module",
   "description": "Quickly access accurate weather information with a clean, modern and user-friendly design.",
   "scripts": {
-    "dev": "vite --port 3000",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "node server.cjs",
-    "dev-server": "nodemon server.cjs"
-  },
+  "dev": "vite --port 3000",                
+  "scss": "sass src/scss/main.scss dist/assets/css/main.css --no-source-map --style=compressed", 
+  "build:scss": "npm run scss",
+  "build:assets": "vite build",
+  "build": "npm run build:scss && npm run build:assets", 
+  "preview": "vite preview"                
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pekkiriscim/weather.git"
@@ -20,13 +21,14 @@
   "bugs": {
     "url": "https://github.com/pekkiriscim/weather/issues"
   },
-  "homepage": "https://github.com/pekkiriscim/weather#readme",
+  "homepage": "https://pekkiriscim.github.io/weather",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "sass": "^1.59.2",
     "vite": "^4.1.0",
     "vite-plugin-html": "^3.2.2",
-    "vite-plugin-static-copy": "^0.13.1"
+    "vite-plugin-static-copy": "^0.13.1",
+    "gh-pages": "^5.0.0"
   },
   "browserslist": [
     "> 0%"
